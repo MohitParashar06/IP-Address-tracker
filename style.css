@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik';
+}
+
+.container{
+    position: relative;
+}
+h2{
+    margin-top: -40px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.863);
+}
+.input_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('images/pattern-bg-desktop.png');
+    background-size: cover;
+    height: 40vh;
+    width:100%;
+    flex-direction: column;
+}
+input{
+   width: 25vw;
+   padding: 0.8rem;
+   border-radius: 15px;
+   font-size: 18px;
+   box-shadow: 2px 4px 5px black;
+}
+button{
+    width: 5vw;
+    padding: 0.8rem;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: rgb(43, 42, 42);
+    box-shadow: 2px 4px 5px rgb(81, 80, 80);
+    border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: rgb(43, 42, 42);
+}
+.details{
+    height: 20vh;
+    z-index: 9;
+    position: absolute;
+    display: flex;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    top: 30%;
+    left: 20%;
+    color: #808080;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px black;
+}
+.details_header{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.detail_adder{
+    display: flex;
+    padding: 1.5rem;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-right: 23px;
+}
+.details-value{
+    color: rgb(43, 42, 42);
+    font-weight: 600;
+    /* word-wrap: break-word; */
+}
+.location,.timezone,.isp{
+    border-left: 1px solid #808080;
+    
+}
+.map_container{
+    color: white;
+    overflow:visible;
+    z-index: 1;
+    position: relative;
+    height: 60vh;
+}

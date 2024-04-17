@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+     <style>
+        #map{
+            height: 70vh;
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input_header">
+            <h2>IP Address Tracker</h2>
+            <div class="field">
+                <input type="text" name="ip" id="ip">
+                <button class="enter" id="btn">></button>
+            </div>
+        </div>
+        <div class="details">
+            <div class="ipaddress  detail_adder">
+                <span class="details_header">IP ADDRESS </span>
+                <span class="details-value" id="ip_value"></span>
+            </div>
+            <div class="location detail_adder">
+                <span class="details_header">LOCATION</span>
+                <span class="details-value" id="location_value"></span>
+            </div>
+            <div class="timezone detail_adder">
+                <span class="details_header">TIMEZONE</span>
+                <span class="details-value" id="time_value"></span>
+            </div>
+            <div class="isp detail_adder">
+                <span class="details_header">ISP</span>
+                <span class="details-value" id="isp_value"></span>
+            </div>
+        </div>
+        <div class="map_container">
+            <div id="map">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
